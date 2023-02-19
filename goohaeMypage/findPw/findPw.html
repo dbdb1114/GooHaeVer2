@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./findPw.css">
+    <script defer src="./findPw.js"></script>
+    <title>GooHae-FindPw</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="innerContainer">
+                <div class="head">
+                    <a href="http://192.168.0.86:3000">LOGO</a>
+                    <ul>
+                        <li>
+                            <a href="../findId/findId.html">아이디 찾기</a>
+                        </li>
+                        <li>
+                            <a href="#">비밀번호 찾기</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="body">
+                    <form action="" method="post">
+                        <p>아이디</p>
+                        <input type="id" id="fpId" name="fpId" required placeholder="아이디">
+                        <span class="hidden">아이디를 입력해주세요</span>
+                        
+                        <p>이름</p>
+                        <input type="text" id="fpName" name="fpName" required placeholder="이름">
+                        <span class="hidden">이름을 입력해주세요</span>
+                        <p>휴대전화</p>
+                        <div class="fpPhone">
+                            <input type="text" name="mobile1"class="fpMobile" required readonly value="010">
+                            -
+                            <input type="text" name="mobile2" class="fpMobile" minlength="4" maxlength="4" required
+                            onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+                            -
+                            <input type="text" name="mobile3" class="fpMobile" minlength="4" maxlength="4" required
+                            onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+                        </div>
+                        <!-- <input type="email" name="fdEmail" id="fdEmail" required placeholder="이메일"> -->
+                        <span class="hidden">휴대전화를 <span class="nonDisplay">정확하게</span> 입력해주세요</span>
+                        <label for="fpFw">이메일</label>
+                        <div class="emailInput">
+                            <input type="email" id="fpFw" name="fpFw" minlength="5" autofocus required>
+                            @
+                            <select class="fpInput">
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="outlook.com">outlook.com</option>
+                                <option value="icloud.com">icloud.com</option>
+                                <!-- <option value="_manual">집적입력</option> -->
+                            </select>
+                        </div>
+                        <span class="hidden">이메일을 입력해주세요</span>
+
+                        <button type="submit">비밀번호 찾기</button>
+                    </form>
+                    <a href="../login/login.html">로그인으로 돌아가기</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

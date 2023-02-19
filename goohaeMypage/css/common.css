@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+:root{
+    --DarkGray : #1A1B23;
+    --CoolGray : #9497AB;
+    --LightGray : #F7F7FB;
+
+    --PurpleBlue : #505DD0;
+    --LightBlue : #CED2F3;
+
+    --CoralRed : #FF655B;
+    --LightRed : #FED5D2;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: NanumGothic;
+}
+
+input:focus {
+    outline: none;
+    color: var(--DarkGray);
+}
+
+select:focus {
+    outline: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

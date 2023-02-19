@@ -1,0 +1,116 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} */
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+/* ============================================================================================ */
+/* ============================================================================================ */
+/* =================================main============================ */
+
+main {
+    width: 70%;
+    /* padding: 0 5%; */
+    font-size: 1.4rem;
+    min-width: 700px;
+}
+
+main, 
+#myPostWrap,
+.postTableWrap {
+    margin: 0 auto;
+}
+
+.myPostUpper select {
+    font-size: 12px;
+}
+
+.myPostTitle {
+    width: 100%;
+    line-height: 2.5rem;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family:'Nanum Myeongjo';
+    text-align: center;
+    color: #1A1B23;
+    padding: 100px 0px 38px;
+}
+
+.postTableWrap span:first-of-type,
+.postTableWrap select {
+    color:#1A1B23;
+}
+
+.postTableWrap {
+    width: 100%;
+    /* margin: 50px auto;    */
+    margin-bottom: 200px;
+}
+
+.postTableCategory {
+    margin: 14px 0 12px;
+    margin-top: 170px;
+}
+
+.postTableCategory a {
+    font-size: 1.2rem;
+}
+
+.postTableCategory a:last-of-type {
+    color: #505DD0;
+    font-weight: bold;
+}
+/* ====================Table=================== */
+/* ====================Table=================== */
+/* ====================Table=================== */
+
+
+.postTable {
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+.postTable tr {
+    height: 40px;
+    border-bottom: 1px solid #1A1B23;
+}
+
+.postTable th {
+    border-bottom: 2px solid #1A1B23;
+    text-align: center;
+}
+
+.postTable td {
+    border-bottom: 2px solid #1A1B23;
+    text-align: center;
+}
+
+.postTable tbody td{
+    height: 70px;
+}
+
+.postSubject a:hover{
+    color: #505DD0;
+}
+
+.nondisplay{
+    display: none;
+}
+/* .PostControlButton {
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 5px;
+} */

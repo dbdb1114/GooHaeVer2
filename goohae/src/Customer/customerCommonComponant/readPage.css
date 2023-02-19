@@ -1,0 +1,67 @@
+.contentContainer {
+    width: 80%;
+    /* height: calc(100vh - 523px); */
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: darkgrey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#noticeTitle {
+    font-size: 2.5rem;
+}
+
+.noticeContent {
+    height: 200px;
+}
+
+.noticeContent div {
+    font-size: 1.3rem;
+}
+
+.writeDate {
+    margin-top: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1%;
+    margin-top: 10px;
+    width: 80%;
+}
+
+
+.delete {
+    cursor: pointer;
+}
+
+
+.buttonContainer>div {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.buttonContainer>.backToList>a {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer>div:hover {
+    background-color: #505DD0;
+}

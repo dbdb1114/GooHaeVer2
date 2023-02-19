@@ -1,0 +1,56 @@
+#FAQTitle {
+    font-size: 2.5rem;
+    ;
+    margin-bottom: 20px;
+}
+
+.FAQContainer {
+    width: 80%;
+    /* height: calc(100vh - 523px); */
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: darkgrey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.FAQContent {
+    height: 200px;
+}
+
+.backToListBtn {
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+.FAQContent {
+    font-size: 1.3rem;
+}
+
+.backToList {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+}
+
+.backToList>a {
+    width: 100px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.backToList>a:hover {
+    background-color: #505DD0;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="./myPageMain/myPage.css">
+    <title>GooHae-MyPage</title>
+  </head>
+
+  <body>
+    <!-- ===================================================================================== -->
+    <!-- ===================================================================================== -->
+    <!-- header -->
+    <header>
+      <div class="upperHeader">
+          <!-- ===== 로고 및 네비 부분 ===== -->
+          <h1 class="logoContainer"><a href="http://192.168.0.86:3000">goohae</a></h1>
+
+          <div class="nav">
+              <ul class="forUserContainer">
+                  <li class="loginInner"><a href="../login/login.html"><img src="../images/icon/login icon.png" alt="login"><span>LOGIN</span></a></li>
+                  <li class="joinInner"><a href="../signUp/pj_signup.html"><img src="../images/icon/join.png" alt="join"><span>JOIN</span></a></li>
+                  <li class="cartInner"><a href="../shoppingCart/shoppingCart.html"><img src="../images/icon/cart.png" alt="cart"><span>CART</span></a></li>
+              </ul>
+
+              <form action="#" class="searchContainer">
+                  <input type="text" placeholder="Search">
+                  <button></button>
+              </form>
+          </div>
+      </div>
+
+      <!-- ===== 카테고리 및 이용문의 부분 ===== -->
+
+      <div class="underHeader">
+          <ul class="categoryContainer">
+              <li><span>거실</span>
+                  <ul>
+                      <li><a href="#">소파</a></li>
+                      <li><a href="#">테이블</a></li>
+                      <li><a href="#">의자</a></li>
+                      <li><a href="#">TV콘솔</a></li>
+                  </ul>
+              </li>
+              
+              <li><span>침실</span>
+                  <ul>
+                      <li><a href="#">침대</a></li>
+                      <li><a href="#">매트리스</a></li>
+                      <li><a href="#">협탁</a></li>
+                  </ul>
+              </li>
+
+              <li><span>주방</span>
+                  <ul>
+                      <li><a href="#">식탁</a></li>
+                      <li><a href="#">의자</a></li>
+                  </ul>
+              </li>
+
+              <li><span>드레스룸</span>
+                  <ul>
+                      <li><a href="#">행거</a></li>
+                      <li><a href="#">수납장</a></li>
+                      <li><a href="#">화장대</a></li>
+                  </ul>
+              </li>
+
+              <li><span><img src="../images/icon/FAQ icon.png" alt="img">이용문의</span>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">이용문의</a></li>
+                      <li><a href="#">QnA</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </header>
+
+    <main>
+      <p class="MyPageTitle">MY&nbsp;PAGE</p>
+      <section class="MyPageWrap">
+        <div class="Ment">
+          <p class="MentContent"><span>유정현</span>님 환영합니다.</p>
+          <p class="infoMent">일반회원으로 <span>10,000</span>원 이상 구매 시 <span>2%</span> 추가 적립</>을 받을 수 있습니다.</p>
+        </div>
+        <!-- <div class="MyPoint">
+          <p> 내 적립금 &#183 쿠폰</p>
+          <div class="myMileageCoupon">
+            <div class="myPossibleMileage">
+              <p>가용 적립금</p>
+              <p><strong>10,000</strong> 원</p>
+            </div>
+            <div class="myUsedMileage">
+              <p>사용 적립금</p>
+              <p><strong>0</strong> 원</p>
+            </div>
+            <div class="myTotalMileage">
+              <p>총 적립금</p>
+              <p><strong>10,000</strong> 원</p>
+            </div>
+            <div class="myCouponWrap">
+              <p>쿠폰</p>
+              <p><strong>6</strong> 개</p>
+            </div>
+          </div>
+
+          <div class="myCouponMileageButtonWrap">
+            <button class="myCouponMileageButton">내 적립금 조회</button>
+            <button class="myCouponMileageButton">내 쿠폰 조회</button>
+          </div>
+        </div> -->
+
+        <article class="MyOrder">
+          <div class="MyOrederTitle">
+            <p>나의 주문처리 현황</p>
+            <p>최근 3개월 기준</p>
+          </div>
+          <div class="MyOrderProcess">
+            <div class="beforePay">
+              <p>입금 전</p>
+              <span>0</span>
+            </div>
+            <img src="./myPageMain/arrowRight.png" alt="">
+            <div class="deliveryReady">
+              <p>배송 준비 중</p>
+              <span>0</span>
+            </div>
+            <img src="./myPageMain/arrowRight.png" alt="">
+            <div class="delieveryProcess">
+              <p>배송 중</p>
+              <span>0</span>
+            </div>
+            <img src="./myPageMain/arrowRight.png" alt="">
+            <div class="delieveryComplete">
+              <p>배송 완료</p>
+              <span>0</span>
+            </div>
+
+            <div class="delieveryEtc">
+              <p>주문 기타</p>
+              <ul>
+                <li>취소&nbsp;&nbsp;&nbsp;<span>0</span> 건</li>
+                <li>교환&nbsp;&nbsp;&nbsp;<span>0</span> 건</li>
+                <li>환불&nbsp;&nbsp;&nbsp;<span>0</span> 건</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </section>
+      <article class="MyMenuWrap">
+        <div class="MyMenu">
+          <div>
+            <a href="./myOrder/myOrder.html">
+              <span><strong>주문 내역</strong></span>
+            </a>
+            <p>
+              <a href="./myOrder/myOrder.html">
+                고객님께서 주문하신 상품의 주문내역을 확인하실 수 있습니다.
+              </a>
+            </p>
+            <a href="./myOrder/myOrder.html">더보기 ></a>
+          </div>
+          <div>
+            <a href="./memberInfo/memeberInfo.html">
+              <span><strong>내정보</strong></span>
+            </a>
+            <p>
+              <a href="./memberInfo/memeberInfo.html">
+                회원이신 고객님의 개인정보를 관리하는 공간입니다.
+                <br />
+              </a>
+            </p>
+            <a href="./memberInfo/memeberInfo.html">더보기 ></a>
+          </div>
+          <div>
+            <a href="../shoppingcart/shoppingCart.html">
+              <span><strong>장바구니</strong></span>
+            </a>
+            <p>
+              <a href="../shoppingcart/shoppingCart.html">
+                회원님의 장바구니를 관리하는 곳입니다.
+                <br />
+                한번에 구매를 하실 수 있고, 삭제하실 수 있습니다.
+              </a>
+            </p>
+            <a href="../shoppingcart/shoppingCart.html">더보기 ></a>
+          </div>
+          <div>
+            <a href="./myWishList/wishList.html">
+              <span><strong>위시리스트</strong></span>
+            </a>
+            <p>
+              <a href="./myWishList/wishList.html">
+                관심상품으로 등록하신 상품의 목록을 보여드립니다.
+              </a>
+            </p>
+            <a href="./myWishList/wishList.html">더보기 ></a>
+          </div>
+          <!-- <div>
+          <a href="../mileage/mileage.html">
+            <span><strong>MILEAGE</strong></span>
+            <span>(적립금)</span>
+          </a>
+          <p><a href="../mileage/mileage.html">
+              적립금은 상품 구매 시 사용하실 수 있습니다.<br>
+              적립된 금액은 현금으로 환불되지 않습니다.
+            </a></p>
+        </div> -->
+          <div>
+            <a href="./myCoupon/myCoupon.html">
+              <span><strong>쿠폰</strong></span>
+            </a>
+            <p>
+              <a href="./myCoupon/myCoupon.html">
+                보유하고 계신 쿠폰내역을 보여드립니다.
+              </a>
+            </p>
+            <a href="./myCoupon/myCoupon.html">더보기 ></a>
+          </div>
+          <div>
+            <a href="./myPost/myPost.html">
+              <span><strong>내 리뷰</strong></span>
+            </a>
+            <p>
+              <a href="./myPost/myPost.html">
+                고객님께서 작성하신 게시물을 관리하는 공간입니다.
+              </a>
+            </p>
+            <a href="./myPost/myPost.html">더보기</a>
+          </div>
+          <div>
+            <a href="./myAddress/myAddress.html">
+              <span><strong>내 주소록</strong></span>
+            </a>
+            <p>
+              <a href="./myAddress/myAddress.html">
+                배송지를 등록하고 관리하실 수 있습니다.
+              </a>
+            </p>
+            <a href="./myAddress/myAddress.html">더보기 ></a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footContainer">
+          <h1 class="footLogo"><a href="#">goohae</a></h1>
+
+          <div class="footTextContainer">
+              <p>이 웹페이지는 개발 학습 용도로 비상업 목적으로 제작되었습니다.</p>
+
+              <p>그린컴퓨터아카데미 Team. Goohae</p>
+
+              <ul class="teamEmail">
+                  <li><a href="#"><img src="../../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                  <li><a href="#"><img src="../../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                  <li><a href="#"><img src="../../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                  <li><a href="#"><img src="../../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+              </ul>
+          </div>
+
+          <div class="footInfo">
+              <a href="#">개인정보처리방침</a>
+              <a href="#">이용약관</a>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+/* ========================== 고객센터 메인 ======================== */
+
+
+
+section {
+    width: 720px;
+    height: 800px;
+    margin: 5% auto;
+    position: relative;
+}
+
+
+
+/* ========================== 고객센터 왼쪽 메뉴 ======================== */
+
+section .left {
+    width: 160px;
+    position: absolute;
+    right: 110%;
+    top: 8px;
+    padding: 30px 20px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    letter-spacing: -2px;
+    z-index: 3;
+}
+
+section .left h2 {
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+}
+
+
+section .left .categoryMenu li {
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+section .left .categoryMenu li a {
+    display: block;
+}
+
+section .left .categoryMenu li:hover a {
+    color: black;
+    font-weight: bold;
+}
+
+
+section .left .categoryMenu li a[href*="#"] {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* ==================================================================== */
+
+
+
+
+
+
+
+
+
+/* ========================== 고객센터 오른쪽 공지사항,FAQ,상담문의 박스 ======================== */
+
+
+section .right {
+    text-align: center;
+}
+
+section .right h1 {
+    font-size: 38px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 15%;
+}
+
+section .right .categoryBox {
+    height: 30vh;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 3%;
+}
+
+section .right .categoryBox li {
+    border: 1px solid silver;
+}
+
+section .right .categoryBox li a {
+    display: block;
+    height: 100%;
+    font-size: 18px;
+}
+
+section .right .categoryBox li a::before {
+    content: "";
+    display: block;
+    height: 70%;
+}
+
+section .right .categoryBox li:nth-child(1) a::before {
+    background: url(../../images/icon_notice.png) no-repeat center/50%;
+}
+
+section .right .categoryBox li:nth-child(2) a::before {
+    background: url(../../images/icon_FAQ.png) no-repeat center/50%;
+}
+
+section .right .categoryBox li:nth-child(3) a::before {
+    background: url(../../images/icon_counseling.png) no-repeat center/50%;
+}
+
+
+/* ======================================================================== */
+
+
+
+
+
+/* ========================== 고객센터 전화문의 =============================== */
+
+
+
+section .right .phonBox {
+    border: 1px solid silver;
+    margin-top: 80px;
+    padding: 30px 25px;
+    text-align: left;
+}
+
+section .right .phonBox ul li {
+    margin-bottom: 15px;
+    color: black;
+    letter-spacing: -1px;
+}
+
+section .right .phonBox ul li:nth-child(1) strong {
+    color: black;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+section .right .phonBox ul li:nth-child(2) {
+    font-size: 1.1em;
+}
+
+section .right .phonBox ul li:nth-child(3) {
+    font-size: 1.1em;
+}
+
+section .right .phonBox ul li:nth-child(3) span {
+    font-size: 1.05em;
+    color: black;
+}
+
+section .right .phonBox ul li:nth-child(3) .day {
+    display: inline-block;
+    border: 1px solid silver;
+    padding: 2.5px 12.5px;
+    font-size: 0.9em;
+    margin-right: 10px;
+    color: black;
+}
+
+section .right .phonBox ul li:nth-child(3) .day:last-of-type {
+    margin-left: 10px;
+}
+
+section .right .phonBox ul li:nth-child(4) {
+    color: crimson;
+    font-size: 0.7em;
+    font-weight: bold;
+}

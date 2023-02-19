@@ -1,0 +1,27 @@
+main h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.categoryBox {
+    width: 70%;
+    height: 24px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.categoryBox li {
+    height: 24px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+main .categoryBox li:hover {
+    height: 24px;
+    box-sizing: border-box;
+    font-weight: bold;
+
+}

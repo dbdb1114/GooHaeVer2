@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="./memberPayment.css">
+    <script defer src="./memberPayMent.js"></script>
+    <title>GooHae-MemberPayPage</title>
+</head>
+
+<body>
+    <header>
+        <div class="upperHeader">
+            <!-- ===== 로고 및 네비 부분 ===== -->
+            <h1 class="logoContainer"><a href="http://192.168.0.86:3000">goohae</a></h1>
+
+            <div class="nav">
+                <ul class="forUserContainer">
+                    <li class="loginInner"><a href="../login/login.html"><img src="../images/icon/login icon.png"
+                                alt="login"><span>LOGIN</span></a></li>
+                    <li class="joinInner"><a href="../signUp/pj_signup.html"><img src="../images/icon/join.png"
+                                alt="join"><span>JOIN</span></a></li>
+                    <li class="cartInner"><a href="../shoppingCart/shoppingCart.html"><img src="../images/icon/cart.png"
+                                alt="cart"><span>CART</span></a></li>
+                </ul>
+
+                <form action="#" class="searchContainer">
+                    <input type="text" placeholder="Search">
+                    <button></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ===== 카테고리 및 이용문의 부분 ===== -->
+
+        <div class="underHeader">
+            <ul class="categoryContainer">
+                <li><span>거실</span>
+                    <ul>
+                        <li><a href="#">소파</a></li>
+                        <li><a href="#">테이블</a></li>
+                        <li><a href="#">의자</a></li>
+                        <li><a href="#">TV콘솔</a></li>
+                    </ul>
+                </li>
+
+                <li><span>침실</span>
+                    <ul>
+                        <li><a href="#">침대</a></li>
+                        <li><a href="#">매트리스</a></li>
+                        <li><a href="#">협탁</a></li>
+                    </ul>
+                </li>
+
+                <li><span>주방</span>
+                    <ul>
+                        <li><a href="#">식탁</a></li>
+                        <li><a href="#">의자</a></li>
+                    </ul>
+                </li>
+
+                <li><span>드레스룸</span>
+                    <ul>
+                        <li><a href="#">행거</a></li>
+                        <li><a href="#">수납장</a></li>
+                        <li><a href="#">화장대</a></li>
+                    </ul>
+                </li>
+
+                <li><span><img src="../images/icon/FAQ icon.png" alt="img">이용문의</span>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">이용문의</a></li>
+                        <li><a href="#">QnA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section>
+            <p class="PaymentTitle">주문/결제</p>
+            <article class="MemberPaymentWrap">
+                <form action="" class="PaymentForm">
+                    <div class="MemPayOrderInfo">
+                        <p class="MemPayOrderSubtitle">배송지 정보</p>
+                        <div>
+                            <label for="MemPayOrderName">받는 사람</label>
+                            <input class="MemPayOrderName" name="MemPayOrderName" id="MemPayOrderName" type="text"
+                                placeholder="이름을 입력하세요.">
+                        </div>
+                        <div>
+                            <label>휴대폰번호</label>
+                            <input class="firstPhoneNum" name="firstPhoneNum" type="text"
+                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" minlength="2" maxlength="3">-
+                            <input class="secondPhoneNum" name="secondPhoneNum" type="text"
+                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" minlength="4" maxlength="4"
+                                required>-
+                            <input class="thirdPhoneNum" name="thirdPhoneNum" type="text"
+                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" minlength="4" maxlength="4"
+                                required>
+                        </div>
+                        <div class="MemPayOrderAddressInputWrap">
+                            <label>주소</label>
+                            <div class="AddressInput">
+                                <div><input class="PostNum" type="text" name="PostNum" required><a href="#">우편번호 찾기</a>
+                                </div>
+                                <div><input class="BasicAddress" type="text" name="BasicAddress" required><span>기본 주소를
+                                        입력해주세요.</span></div>
+                                <div><input class="DetailedAddress" type="text" name="DetailedAddress" required><span>상세
+                                        주소를 입력해주세요.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postMemoInput">
+                            <label for="MemOrderPostMemo">배송 메모</label>
+                            <select class="postMemo" name="MemOrderPostMemo" id="MemOrderPostMemo">
+                                <option value="1">배송메모를 선택하세요.</option>
+                                <option value="2">부재시 경비실에 맡겨주세요.</option>
+                                <option value="3">빠른 배송 부탁드려요.</option>
+                                <option value="4">부재시 연락 바랍니다.</option>
+                                <option value="5">배송전 연락 바랍니다.</option>
+                                <option value="6">직접 입력하기(20자 이내)</option>
+                            </select>
+                            <input class="postMemo" placeholder="직접입력" type="text" name="MemOrderPostMemo"
+                                id="MemOrderPostMemo">
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="MemPayOrderProductInfo">
+                        <p class="MemPayOrderSubtitle">상품정보</p>
+                        <div>
+                            <img src="../images/icon/HunkerBed1-1.jpg" alt="구매 상품 이미지">
+                            <div>
+                                <p class="MemPayOrderProductName">GooHae특별 상품</p>
+                                <p>
+                                    <span class="MemPayOrderProductOption">옵션</span>
+                                    <span> 색상, 사이즈 </span>
+                                </p>
+                            </div>
+                            <p class="MemPayOrderProductQuantity">2개</p>
+                            <p class="MemPayOrderProductPrice">
+                                <span class="SmallGuide">상품가격</span>
+                                <span>1,115,000</span>
+                            </p>
+                            <p>
+                                <span class="SmallGuide">배송료</span>
+                                <span>25,000</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="MemPayOrderMileageWrap">
+                        <p class="MemPayOrderSubtitle">쿠폰 사용</p>
+                        <!-- <div class="MemPayOrderMileage">
+                            <div class="MemPayOrderUserMileageWrap">
+                                <span>보유 적립금&nbsp;</span>
+                                <strong>0</strong>
+                                <span>원</span>
+                            </div>
+                            <div class="MemPayOrderMileageUseInputWrap">
+                                <div class="MemPayOrderMileageUseInput">
+                                    <input type="number" placeholder="0원">
+                                    <button>적용</button>
+                                    <span>사용하실 적립금 입력 후 '적용'버튼을 눌러주세요.</span>
+                                </div>
+                                <div>
+                                    <input name="AlliMileageUse" type="checkbox" id="useAllCredit">
+                                    <label for="useAllCredit"><span class="radioImg">라디오버튼</span></label>
+                                    <span>모두사용</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="MemPayOrderCoupon">
+                            <div class="MemPayOrderUserCouponWrap">
+                                <span>보유 쿠폰&nbsp;</span>
+                            </div>
+                            <div class="MemPayOrderCouponUseInputWrap">
+                                <select name="MemPayOrderProductCoupon" id="MemPayOrderProductCoupon">
+                                    <option value="0">쿠폰을 골라주세요.</option>
+                                    <option value="1">프로젝트 끝 할인쿠폰 40%</option>
+                                    <option value="2">JS 환영 쿠폰 25%</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="MemPayOrderPayMeth">
+                        <p class="MemPayOrderSubtitle">결제수단</p>
+                        <div class="MemPayOrderPayMethBtn">
+                            <label class="cardPayBtn" for="card">
+                                <img src="../images/credit-cards.png" alt="card">
+                                <span>신용/체크 카드</span>
+                            </label>
+                            <label class="accountPayBtn" for="account">
+                                <img src="../images/transaction.png" alt="account">
+                                <span>무통장 입금</span>
+                            </label>
+                            <label class="mobilePayBtn" for="mobilePay">
+                                <img src="../images/smartphone-call.png" alt="mobilePay">
+                                <span>핸드폰 결제</span>
+                            </label>
+                            <label class="kakaoPayBtn" for="kakao">
+                                <img src="../images/kakao-talk.png" alt="kakao">
+                                <span>카카오페이</span>
+                            </label>
+                        </div>
+
+                        <div class="payBoxWrap ">
+                            <div class="MemPayOrderCardPayment displayFlex">
+                                <div>
+                                    <p>카드 선택</p>
+                                    <div>
+                                        <select name="PaymentMethcard" id="PaymentMethcard" class="cardPaymentSelect">
+                                            <option value="1">카드를 선택하세요</option>
+                                            <option value="2">신한카드</option>
+                                            <option value="3">비씨카드</option>
+                                            <option value="4">국민카드</option>
+                                            <option value="5">삼성카드</option>
+                                            <option value="6">현대카드</option>
+                                            <option value="7">롯데카드</option>
+                                            <option value="8">하나카드</option>
+                                            <option value="9">외환카드</option>
+                                            <option value="10">농협카드</option>
+                                            <option value="11">씨티카드</option>
+                                            <option value="12">우리카드</option>
+                                            <option value="13">광주카드</option>
+                                            <option value="14">제주카드</option>
+                                            <option value="15">전북카드</option>
+                                            <option value="16">수협카드</option>
+                                            <option value="17">우체국카드</option>
+                                            <option value="18">MG새마을카드</option>
+                                            <option value="19">신협카드</option>
+                                            <option value="20">카카오뱅크카드</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>할부 기간</p>
+                                    <div class="halbuWrap">
+                                        <select name="halbuMonth" id="halbuMonth" class="halbuMonth" disabled>
+                                            <option value="1">일시불</option>
+                                            <option value="2">1개월</option>
+                                            <option value="3">2개월</option>
+                                            <option value="4">3개월</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accountDepositeWrap displayNone">
+                                <div>
+                                    <p>은행 선택</p>
+                                    <div>
+                                        <select class="DepositeBankSelect" name="DepositeBankSelect"
+                                            id="DepositeBankSelect">
+                                            <option value="1">카드를 선택하세요</option>
+                                            <option value="2">신한은행</option>
+                                            <option value="3">국민은행</option>
+                                            <option value="4">하나은행</option>
+                                            <option value="5">외환은행</option>
+                                            <option value="6">농협은행</option>
+                                            <option value="7">우리은행</option>
+                                            <option value="8">수협</option>
+                                            <option value="9">MG새마을금고</option>
+                                            <option value="10">카카오뱅크</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>입금자명</p>
+                                    <div><input type="text" for="depositeCustomerName" class="depositeCustomerName"
+                                            placeholder="입금자명을 입력하세요"></div>
+                                </div>
+                                <div class="cashBillsWrap">
+                                    <p>현금영수증 발행</p>
+                                    <div class="cashBillInputWrap">
+                                        <div class="cashBillTypeWrap">
+                                            <span class="cashBillTypeIncome">소득공제</span>
+                                            <span class="cashBillTypeProve">지출증빙</span>
+                                            <span class="cashBillTypeNo">신청안함</span>
+                                        </div>
+                                        <div class="cashBillTypeIncomeNum displayBlock">
+                                            <input class="cashBillFirstPhoneNum" name="firstPhoneNum"
+                                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                                minlength="2" maxlength="3">-
+                                            <input class="cashBillSecondPhoneNum" name="secondPhoneNum"
+                                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                                minlength="4" maxlength="4" required>-
+                                            <input class="cashBillThirdPhoneNum" name="thirdPhoneNum"
+                                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                                minlength="4" maxlength="4" required>
+                                        </div>
+                                        <div class="cashBillTypeProveNumwrap displayNone">
+                                            <input class="cashBillTypeProveNum" type="text"
+                                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                                placeholder="사업자등록번호를 입력해주세요.('-'제외)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobilePayWrap displayNone">
+                                <p>휴대폰 결제 한도 금액은 30만원입니다</p>
+                                <p>개인에 따라 이용 한도 금액이 상이할 수 있으니 정확한 이용 한도 금액은 이용 중인 통신사에 문의해 주세요 ( 휴대폰에서 114 문의 )
+                                </p>
+                            </div>
+                            <div class="kakaoPayBtn displayNone">
+                                결제하기 버튼을 눌러주시면 됩니다.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="MemberPayMentFinPrice">
+                        <p>최종 결제금액</p>
+                        <div>
+                            <div class="MemPayProductPriceWrap">
+                                <span>상품금액</span>
+                                <span><strong>1,150,000</strong>원</span>
+                            </div>
+                            <div class="MemPayDiscountPriceWrap">
+                                <span>할인금액</span>
+                                <span>- <strong>0</strong>원</span>
+                            </div>
+                            <div class="MemPayDelieveryFeeWrapWrap">
+                                <span>배송비</span>
+                                <span>+ <strong>25,000</strong>원</span>
+                            </div>
+                            <div class="MemPayTotalPriceWrap">
+                                <span>총 결제 예상금액(1건)</span>
+                                <span><strong></strong>원</span>
+                            </div>
+                            <div>
+                                <span>적립예상 페이백</span>
+                                <span><strong>0</strong>원</span>
+                            </div>
+                        </div>
+
+                        <p class="MemPayOrderTotalAgree">
+                            <input type="checkbox" name="agree" id="agree" value="allAgree">
+                            <label for="agree">
+                                <img src="./unChecked.png" alt="img">
+                            </label>
+                            <label for="agree">전체 동의하기</label>
+                        </p>
+                        <ul class="MemPayOrderTotalAgreeSection">
+                            <li>
+                                <input type="checkbox" name="agree" id="agree1" value="agree1">
+                                <label for="agree1">
+                                    <img src="./unChecked.png" alt="img">
+                                </label>
+                                <label for="agree1">
+                                    (필수)구매조건 확인 및 결제진행 동의
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree" id="agree2" value="agree2">
+                                <label for="agree2">
+                                    <img src="./unChecked.png" alt="img">
+                                </label>
+                                <label for="agree2">
+                                    (필수)개인정보 수집 및 이용동의
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree" id="agree3" value="agree3">
+                                <label for="agree3">
+                                    <img src="./unChecked.png" alt=""></label>
+                                <label for="agree3">
+                                    (필수)개인정보 제3자 제공동의
+                                </label>
+                            </li>
+                        </ul>
+                        <div>
+                            <button class="PaymentOrderBtn btnDisable"><a
+                                    href="./paymentComplete.html">주문하기</a></button>
+                        </div>
+                    </div>
+                </form>
+            </article>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="footContainer">
+            <h1 class="footLogo"><a href="#">goohae</a></h1>
+
+            <div class="footTextContainer">
+                <p>이 웹페이지는 개발 학습 용도로 비상업 목적으로 제작되었습니다.</p>
+
+                <p>그린컴퓨터아카데미 Team. Goohae</p>
+
+                <ul class="teamEmail">
+                    <li><a href="#"><img src="../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                    <li><a href="#"><img src="../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                    <li><a href="#"><img src="../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                    <li><a href="#"><img src="../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footInfo">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">이용약관</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

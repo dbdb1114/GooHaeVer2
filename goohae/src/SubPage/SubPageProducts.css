@@ -1,0 +1,36 @@
+.categoryBest {
+    width: 70%;
+    height: 25vw;
+    margin: auto;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.categoryBest>h2 {
+    font-size: 3rem;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* products ===== */
+.categoryProducts {
+    width: 70%;
+    height: 50vw;
+    margin: auto;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.categoryProducts>h3 {
+    font-size: 2.5rem;
+    height: 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

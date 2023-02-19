@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+/* =================================main============================ */
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.CouponListTableWrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.MyCouponListTitle {
+    margin-top: 100px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: NanumMyeongjo;
+    font-weight: bold;
+}
+
+.CouponListCategory {
+    margin-top: 170px;
+    margin-bottom: 1rem;
+}
+
+.CouponListCategory a {
+    font-size: 1.2rem;
+}
+
+.CouponListCategory a:last-of-type {
+    font-size: 1.2rem;
+    color: var(--PurpleBlue);
+}
+
+.CouponListTable {
+    width: 100%;
+    /* height: 400px; */
+    border-collapse: collapse;
+}
+
+.CouponListTable thead {
+    border-bottom: 2px solid;
+}
+
+.CouponListTable tbody {
+    border-bottom: 2px solid;
+}
+
+.CouponListTable tr {
+    height: 40px;
+}
+
+.CouponListTable th {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.CouponListTable td {
+    white-space: nowrap;
+    text-align: center;
+    height: 100px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.CouponListTable tr>td:first-of-type {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.CouponListTable tr>td {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.CouponListTable+.couponPageIdx {
+    margin-top: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.CouponSubmitWrap>.CouponSubmit>p:first-of-type {
+    font-size: 2rem;
+}
+
+.CouponSubmitWrap>.CouponSubmit>p:last-of-type {
+    text-align: center;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.CouponSubmitWrap {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.CouponSubmitWrap>p {
+    margin-left: 23%;
+    font-size: 1.5rem;
+    color: var(--CoolGray);
+    margin-top: 10px;
+}
+
+.CouponSubmit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0%;
+    margin-top: 30px;
+}
+
+.CouponSubmit input {
+    width: 40%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.CouponSubmit button {
+    width: 15%;
+    height: 40px;
+    background-color: var(--DarkGray);
+    color: white;
+    border: none;
+    pointer-events: none;
+}
+
+.CouponSubmit button:hover{
+    background-color: var(--PurpleBlue);
+}
+/* ================================================================ */
+/* ===========================CouponSubmitCaution======================== */
+/* ===========================CouponSubmitCaution======================== */
+
+.CouponSubmitCaution {
+    margin: 80px auto;
+    border: solid 1px var(--CoolGray);
+    margin-bottom: 100px;
+}
+
+.CouponSubmitCaution>.couponCautionWrap {
+    width: 100%;
+    padding: 2%;
+}
+
+.CouponSubmitCaution>.couponCautionWrap>p {
+    color: var(--PurpleBlue);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.CouponSubmitCaution>.couponCautionWrap>ul li {
+    font-size: 1.2rem;
+    color: var(--CoolGray);
+    margin-top: 3px;
+}
+
+.CouponSubmitCaution>.couponCautionWrap ul li strong {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: var(--CoolGray);
+}

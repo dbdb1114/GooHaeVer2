@@ -1,0 +1,55 @@
+
+.writeList {
+    width: 100%;
+    height : 80%;
+    border: 1px #c8c8c8 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+.titleWrite {
+    width: 600px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end
+}
+
+
+.titleWrite label input {
+    height: 35px;
+
+
+    border-top: none;
+    border-bottom: 1px solid #c8c8c8;
+    border-left: none;
+    border-right: none;
+}
+
+.titleWrite label input:focus {
+    outline: 0;
+}
+
+.titleWrite label:nth-child(1) {
+    margin-right: 20px;
+}
+
+textarea {
+    width: 800px;
+    resize: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: 1px solid #c8c8c8;
+}
+
+.writeComplete {
+    color: white;
+    margin-top: 10px;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./myPost.css">
+    <link rel="stylesheet" href="../../header/header.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script defer src="./myPost.js"></script>
+    <title>GooHae-MyPage-Post</title>
+</head>
+
+<body>
+    <header>
+        <div class="upperHeader">
+            <!-- ===== 로고 및 네비 부분 ===== -->
+            <h1 class="logoContainer"><a href="http://192.168.0.86:3000">goohae</a></h1>
+
+            <div class="nav">
+                <ul class="forUserContainer">
+                    <li class="loginInner"><a href="../../login/login.html"><img src="../../images/icon/login icon.png"
+                                alt="login"><span>LOGIN</span></a></li>
+                    <li class="joinInner"><a href="../../signUp/pj_signup.html"><img src="../../images/icon/join.png"
+                                alt="join"><span>JOIN</span></a></li>
+                    <li class="cartInner"><a href="../../shoppingCart/shoppingCart.html"><img src="../../images/icon/cart.png"
+                                alt="cart"><span>CART</span></a></li>
+                </ul>
+
+                <form action="#" class="searchContainer">
+                    <input type="text" placeholder="Search">
+                    <button></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ===== 카테고리 및 이용문의 부분 ===== -->
+
+        <div class="underHeader">
+            <ul class="categoryContainer">
+                <li><span>거실</span>
+                    <ul>
+                        <li><a href="#">소파</a></li>
+                        <li><a href="#">테이블</a></li>
+                        <li><a href="#">의자</a></li>
+                        <li><a href="#">TV콘솔</a></li>
+                    </ul>
+                </li>
+
+                <li><span>침실</span>
+                    <ul>
+                        <li><a href="#">침대</a></li>
+                        <li><a href="#">매트리스</a></li>
+                        <li><a href="#">협탁</a></li>
+                    </ul>
+                </li>
+
+                <li><span>주방</span>
+                    <ul>
+                        <li><a href="#">식탁</a></li>
+                        <li><a href="#">의자</a></li>
+                    </ul>
+                </li>
+
+                <li><span>드레스룸</span>
+                    <ul>
+                        <li><a href="#">행거</a></li>
+                        <li><a href="#">수납장</a></li>
+                        <li><a href="#">화장대</a></li>
+                    </ul>
+                </li>
+
+                <li><span><img src="../../images/icon/FAQ icon.png" alt="img">이용문의</span>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">이용문의</a></li>
+                        <li><a href="#">QnA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="myPostWrap">
+            <div class="postTableCategory">
+                <a href="http://localhost:3000">홈 ></a>
+                <a href="../myPage.html">마이쇼핑 ></a>
+                <a href="">나의 리뷰</a>
+            </div>
+
+            <p class="myPostTitle">나의 리뷰</p>
+
+            <article class="postTableWrap">
+                <!-- <select name="#" id="#">
+                    <option value="1">작성최신순</option>
+                    <option value="2">작성오래된순</option>
+                </select> -->
+
+                <table class="postTable">
+                    <colgroup>
+                        <col width="5%">
+                        <col width="10%">
+                        <col width="65%">
+                        <col width="10%">
+                        <col width="10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">분류</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성일</th>
+                            <th scope="col">조회</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="#">001</a>
+                            </td>
+                            <td>
+                                <a href="#">리뷰</a>
+                            </td>
+                            <td class="postSubject">
+                                <a href="#">너무 좋아요!</a>
+                            </td>
+                            <td>
+                                <a href="#">11/14</a>
+                            </td>
+                            <td>
+                                <a href="#">500,132</a>
+                            </td>
+                        </tr>
+                        <tr class="nondisplay postText">
+                            <td colspan="5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident
+                                accusantium, atque illo perferendis, illum molestias praesentium adipisci aliquid fugiat
+                                mollitia modi veritatis molestiae aspernatur fugit repellendus quod reiciendis
+                                cupiditate.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident
+                                accusantium, atque illo perferendis, illum molestias praesentium adipisci aliquid fugiat
+                                mollitia modi veritatis molestiae aspernatur fugit repellendus quod reiciendis
+                                cupiditate.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident
+                                accusantium, atque illo perferendis, illum molestias praesentium adipisci aliquid fugiat
+                                mollitia modi veritatis molestiae aspernatur fugit repellendus quod reiciendis
+                                cupiditate.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident
+                                accusantium, atque illo perferendis, illum molestias praesentium adipisci aliquid fugiat
+                                mollitia modi veritatis molestiae aspernatur fugit repellendus quod reiciendis
+                                cupiditate.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident
+                                accusantium, atque illo perferendis, illum molestias praesentium adipisci aliquid fugiat
+                                mollitia modi veritatis molestiae aspernatur fugit repellendus quod reiciendis
+                                cupiditate.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footContainer">
+            <h1 class="footLogo"><a href="#">goohae</a></h1>
+
+            <div class="footTextContainer">
+                <p>이 웹페이지는 개발 학습 용도로 비상업 목적으로 제작되었습니다.</p>
+
+                <p>그린컴퓨터아카데미 Team. Goohae</p>
+
+                <ul class="teamEmail">
+                    <li><a href="#"><img src="../../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                    <li><a href="#"><img src="../../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                    <li><a href="#"><img src="../../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                    <li><a href="#"><img src="../../images/icon/GitHub.png" alt="img"><span>@ github</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footInfo">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">이용약관</a>
+            </div>
+        </div>
+    </footer>    
+</body>
+
+</html>

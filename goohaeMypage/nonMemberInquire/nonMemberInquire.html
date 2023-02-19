@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GooHae-NonMember</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./nonMemberInquire.css">
+    <script defer src="./nonMemberInquire.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="innerContainer">
+                <div class="head">
+                    <a href="http://192.168.0.86:3000">logo</a>
+                    <ul>
+                        <li>
+                            <a href="../login/login.html">로그인</a>
+                        </li>
+                        <li>
+                            <a href="#">비회원 배송조회</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="body">
+                    <form action="" method="post">
+                        <p>이름</p>
+                        <input type="text" id="nonMemberName" name="nonMemberName" required placeholder="국문으로 입력해 주세요"
+                            onKeyup="this.value=this.value.replace(/[^-ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g,'');">
+                        <span class="hidden">이름을 입력해주세요</span>
+
+                        <p>휴대전화</p>
+                        <div class="nmPhone">
+                            <input type="text" name="mobile1" class="nmMobile" required readonly value="010">
+                            -
+                            <input type="text" name="mobile2" class="nmMobile" minlength="4" maxlength="4" required
+                                onKeyup="this.value=this.value.replace(/[^-0-9]/g,'');">
+                            -
+                            <input type="text" name="mobile3" class="nmMobile" minlength="4" maxlength="4" required
+                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" />
+                        </div>
+                        <span class="hidden">휴대전화를 <span class="nonDisplay">정확하게</span> 입력해주세요</span>
+
+                        <p>주문번호</p>
+                        <input type="text" id="nonMemberEmail" name="nonMemberEmail" required
+                            placeholder="메일, 문자로 발송된 번호를 입력해 주세요">
+                        <span class="hidden">주문번호를 입력해주세요</span>
+
+                        <button onclick="location.href='../myPage/myOrder/myOrder.html';" disabled>
+                            주문조회하기
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

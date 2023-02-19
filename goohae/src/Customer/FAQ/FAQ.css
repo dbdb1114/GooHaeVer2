@@ -1,0 +1,32 @@
+@import url(../customerCommonComponant/boxList.css);
+@import url(../customerCommonComponant/tableList.css);
+
+.filteringBox{
+    width : 70%;
+    font-size: 1.4rem;
+    display: flex;
+    border: 1px solid #aaaaaa;
+    margin-bottom: 20px ;
+}
+
+.filteringBox .filter{
+    width : 20%;
+    padding: 15px 0;
+    display : flex;
+    justify-content: center;
+    border-right: 1px solid #aaaaaa;
+    cursor : pointer;
+}
+
+.filteringBox li:nth-child(5){
+    border-right: none;
+}
+
+.filteringBox .filter:hover{
+    color : white;
+    background-color: black;
+}
+
+
+
+

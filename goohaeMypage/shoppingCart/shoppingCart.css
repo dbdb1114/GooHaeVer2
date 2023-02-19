@@ -1,0 +1,215 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* * {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} */
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+/* ============================================================================================ */
+/* ============================================================================================ */
+/* =================================main============================ */
+
+main {
+    width: 70%;
+    margin: auto;
+    font-size: 1.4rem;
+    margin-top: 170px;
+}
+/* 
+.cartWrap {
+    margin: 0 auto;
+} */
+
+.cartTitle {
+    line-height: 2.5rem;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family:'Nanum Myeongjo';
+    text-align: center;
+    color: #1A1B23;
+    padding: 100px 0px 38px;
+}
+
+/* ====================테이블 왼쪽 위 작은 카테고리=================== */
+/* ====================테이블 왼쪽 위 작은 카테고리=================== */
+/* ====================테이블 왼쪽 위 작은 카테고리=================== */
+
+.cartCategory {
+    margin: 14px 0 12px;
+}
+
+.cartCategory a {
+    font-size: 1.2rem;
+}
+
+.cartCategory a:last-of-type {
+    color: #505DD0;
+    font-weight: bold;
+}
+
+/* ====================Table=================== */
+/* ====================Table=================== */
+/* ====================Table=================== */
+.cartTable {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.cartTable thead,
+.cartTable tbody,
+.cartTable tr {
+    border-bottom: 2px solid #1A1B23;
+}
+
+.cartTable tr {
+    height: 40px;
+    border-bottom: 1px; 
+}
+
+.cartTable th {
+    text-align: center;
+}
+
+.cartTable tr td {
+    text-align: center;
+    height: 100px;
+}
+
+.cartTable tbody td:nth-of-type(2) img {
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+}
+
+.cartTable tbody tr{
+    height: 140px;
+}
+
+.cartTable td:nth-of-type(3) {
+    text-align: left;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.cartTable td:nth-of-type(3) p:last-child{
+    padding-top: 11px ;
+    opacity: 0.5;
+
+}
+.cartTable td:nth-of-type(4) input {
+    width: 15px;
+    height: 20px;
+}
+.cartTable td:nth-of-type(5){
+    padding:0 10px;
+    text-align: right;
+} 
+/* 마우스 오버  */
+.hover{
+    color: #505DD0;
+}
+
+/* .cartTable td:last-of-type button {
+    background-color: #F5F5F5;
+    width: 100px;
+    border: solid 1px;
+} */
+.productBtn button {
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    height: 25px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    color: #1A1B23;
+    border: 0;
+    cursor: pointer;
+}
+
+.totalPriceInner{
+    visibility: hidden;
+}
+
+/* tbody tr td:last-child> button {
+    background-color: #F5F5F5;
+    color: #1A1B23;
+} */
+
+/*--------------------반복반복 그냥 나중에 지워주세요--------------------------------*/
+
+
+/*--------------------여기까지 그냥 반복반복 그냥 나중에 지워주세요--------------------------------*/
+
+
+/* .productBoxName {
+    padding: 50px;
+}
+
+.productBoxName>a {
+    display: inline-block;
+    margin: 14px 0;
+
+}
+.productNumber{
+    width: 300px;
+}
+.productNumber input {
+    box-sizing: border-box;
+    width: 20px;
+} */
+
+
+/* 총 주문금액 라인 */
+.totalPriceInner{
+    height: 70px;
+}
+
+.totalPriceInner > * {
+    padding: 3px;
+    text-align: right;
+}
+
+
+
+
+/* 주문 버튼 */
+.orderButtonBox {
+    display: flex;
+    justify-content: center;
+}
+
+.orderButtonBox a {
+    display: inline-block;
+    text-align: center;
+    width: 264px;
+    height: 36px;
+    line-height: 36px;
+    margin: 40px 20px;
+}
+
+.orderButtonBox a:first-of-type {
+    background-color: #F5F5F5;
+    color: #1A1B23;
+}
+
+.orderButtonBox a:last-of-type {
+    background-color: #1A1B23;
+    color: #F7F7FB;
+}
+
+.btnDisabled {
+    pointer-events: none;
+}

@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+/* =========================================================== */
+/* =========================================================== */
+/* =========================main============================== */
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.MyOrderWrap,
+.OrderHistory,
+.OrderTableWrap {
+    margin: 0 auto;
+}
+
+.MyOrderTitle {
+    font-family: NanumMyeongjo;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    color: black;
+}
+
+.OrderHistory {
+    margin: 20px 0;
+}
+
+.OrderHistoryCategory {
+    margin-top: 170px;
+}
+
+.OrderHistoryCategory a {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.OrderHistoryCategory a:last-of-type {
+    font-size: 1.2rem;
+    color: var(--PurpleBlue);
+}
+
+.SelectOrderCondition {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.SelectOrderCondition p {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.SelectOrderCondition p span {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.SelectOrderCondition p:first-of-type {
+    border-bottom: 2px solid var(--PurpleBlue);
+}
+
+.SelectOrderCondition p:first-of-type span {
+    color: var(--PurpleBlue);
+}
+
+.SelectOrderCondition p:last-of-type {
+    color: black;
+}
+
+.OrderConditionWrap {
+    width: 100%;
+    height: 130px;
+    border: solid 2px var(--LightGray);
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.OrderConditionWrap>select:first-of-type {
+    display: inline-block;
+    padding: 11px;
+    width: 20%;
+    height: 40px;
+    font-size: 1.4rem
+}
+
+.OrderConditionDate {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 10px;
+    padding-right: 5px;
+}
+
+.OrderConditionDate a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 4px;
+    margin-right: 5px;
+}
+
+.OrderDateSelect {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.OrderDateSelect>input {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+}
+
+.OrderDateSelect a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 60px;
+    border: 1px solid;
+    font-size: 1.2rem;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+
+.OrderHistory ul{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.OrderHistory ul li {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: var(--CoolGray);
+}
+
+.OrderTableTitle {
+    height: 25px;
+    line-height: 25px;
+    color: grey;
+}
+
+.OrderTable {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.OrderTable>thead {
+    border-bottom: 2px solid;
+}
+
+.OrderTable>tbody {
+    border-bottom: 2px solid;
+}
+
+.OrderTable>tbody>tr:not(:last-of-type) {
+    border-bottom: 1px solid;
+}
+
+.OrderTable tr {
+    height: 40px;
+
+}
+
+.OrderTable th {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr {
+    font-size: 1.4rem;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr>td {
+    font-size: 1.4rem;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr>td:first-of-type{
+    padding: 0 10px;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr>td:nth-of-type(n+3):nth-of-type(-n+7){
+    padding: 0 10px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr>th:first-of-type {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr .orderProductName{
+    font-weight : 700;
+    margin-bottom: 11px;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr>td:nth-of-type(3) {
+    padding-left: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.OrderTableWrap>.OrderTable>tbody>tr>td:nth-of-type(3)>p:last-of-type,
+.OrderTableWrap>.OrderTable>tbody>tr>td:nth-of-type(3)>p:last-of-type>span {
+    color: var(--CoolGray);
+    font-size: 1.4rem;
+}
+
+.OrderTable td {
+    text-align: center;
+    height: 100px;
+}
+
+.OrderTable+p {
+    padding: 30px;
+    text-align: center;
+}
+
+.OrderTableWrap>p:last-of-type {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.SelectOrderCondition{
+    height: 50px;
+    visibility: hidden;
+}
